@@ -24,7 +24,8 @@ function render() {
     (window as any).currentP5 = null;
   }
   if (hash === "work1") {
-    app.innerHTML = '<div id="p5-container"></div><a href="#">Homeへ戻る</a>';
+    app.innerHTML =
+      '<div id="p5-container"></div><a href="#" class="home-link">Home</a>';
     (window as any).currentP5 = new p5(
       works[hash],
       document.getElementById("p5-container")!
